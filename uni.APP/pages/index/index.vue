@@ -191,19 +191,23 @@
 	}
 
 	.fan-controls {
-		display: flex;
-		flex-direction: column;
-		gap: 8rpx;
+		display: grid; /* 使用网格布局 */
+		grid-template-columns: 1fr 1fr; /* 两列等宽 */
+		grid-gap: 8rpx; /* 按钮之间的间距 */
+		padding: 10rpx;
 	}
 
 	.fan-btn {
 		width: 80rpx;
-		height: 30rpx;
+		height: 60rpx;
 		line-height: 30rpx;
 		font-size: 18rpx;
 		padding: 0;
 		background-color: #f5f5f5;
 		color: #6d6d6d;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.fan-btn.active {
